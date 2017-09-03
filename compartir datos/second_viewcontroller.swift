@@ -26,6 +26,17 @@ class second_viewcontroller: UIViewController {
     
     var myString_usuario = String()
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var send_nombre = segue.destination as! third_viewcontroller
+        send_nombre.myString_nombre_vc3 = textfield_nombre_vc2.text!
+        var send_apellido = segue.destination as! third_viewcontroller
+        send_apellido.myString_apellido_vc3 = textfield_apellido_vc2.text!
+        var send_edad = segue.destination as! third_viewcontroller
+        send_edad.myString_edad_vc3 = textfield_edad_vc2.text!
+        var send_genero = segue.destination as! third_viewcontroller
+        send_genero.myString_genero_vc3 = textfield_genero_vc2.text!
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

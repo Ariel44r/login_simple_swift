@@ -9,11 +9,30 @@
 import UIKit
 
 class third_viewcontroller: UIViewController {
+    
+    //Outlets_vc3
+    @IBOutlet weak var label_usuario_vc3: UILabel!
+    @IBOutlet weak var label_nombre_vc3: UILabel!
+    @IBOutlet weak var label_apellido_vc3: UILabel!
+    @IBOutlet weak var label_edad_vc3: UILabel!
+    @IBOutlet weak var label_genero_vc3: UILabel!
+    
 
+    //variables
+    var myString_usuario_vc3 = String()
+    var myString_nombre_vc3 = String()
+    var myString_apellido_vc3 = String()
+    var myString_edad_vc3 = String()
+    var myString_genero_vc3 = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        label_nombre_vc3.text = myString_nombre_vc3
+        label_apellido_vc3.text = myString_apellido_vc3
+        label_edad_vc3.text = myString_edad_vc3
+        label_genero_vc3.text = myString_genero_vc3
     }
 
     override func didReceiveMemoryWarning() {

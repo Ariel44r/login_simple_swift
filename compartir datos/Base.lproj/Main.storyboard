@@ -289,7 +289,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ydh-g6-j7Z">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ydh-g6-j7Z">
                                 <rect key="frame" x="34" y="248" width="300" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="QNu-ue-Oh0"/>
@@ -299,7 +299,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggi-s3-7wQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apellido" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggi-s3-7wQ">
                                 <rect key="frame" x="34" y="316" width="300" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="BrC-22-ojO"/>
@@ -309,7 +309,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekY-Fh-MD6">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekY-Fh-MD6">
                                 <rect key="frame" x="34" y="381" width="300" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="abF-hy-dw6"/>
@@ -319,7 +319,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APk-Wf-Ia5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Género" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APk-Wf-Ia5">
                                 <rect key="frame" x="34" y="453" width="300" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="pMP-JE-Dyf"/>
@@ -367,6 +367,13 @@
                             <constraint firstItem="izr-Fx-2bM" firstAttribute="centerY" secondItem="N7j-IC-NZy" secondAttribute="centerY" constant="222.5" id="oNX-Sb-ZZK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label_apellido_vc3" destination="Ggi-s3-7wQ" id="HoK-aJ-Ndq"/>
+                        <outlet property="label_edad_vc3" destination="ekY-Fh-MD6" id="rfD-qn-NSM"/>
+                        <outlet property="label_genero_vc3" destination="APk-Wf-Ia5" id="xjk-Jd-uCi"/>
+                        <outlet property="label_nombre_vc3" destination="Ydh-g6-j7Z" id="g20-CA-7i7"/>
+                        <outlet property="label_usuario_vc3" destination="nGX-si-e7A" id="IT1-qO-93W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R4t-bH-Dgh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -374,6 +381,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="3Cu-1C-QEl"/>
+        <segue reference="CTi-eH-B0g"/>
     </inferredMetricsTieBreakers>
 </document>
