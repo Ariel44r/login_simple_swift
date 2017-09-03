@@ -22,6 +22,21 @@ class second_viewcontroller: UIViewController {
     @IBOutlet weak var textfield_genero_vc2: UITextField!
 
     @IBAction func button_confirmar_vc2(_ sender: Any) {
+        
+        //check if text field is empty
+        if (textfield_nombre_vc2.text == "" || textfield_apellido_vc2.text! == "" || textfield_edad_vc2.text! == "" || textfield_genero_vc2.text! == "") {
+            displayalert(userMessage: "Todos los datos son requeridos, por favor vuelva a intentarlo")
+            print("No ha validao todos los datos")
+            return
+        }
+    }
+    
+    //display_alert_function
+    func displayalert(userMessage:String) {
+        let myalert = UIAlertController(title:"Aviso", message:userMessage, preferredStyle: UIAlertControllerStyle.alert)
+        let okAction = UIAlertAction(title:"ok", style: UIAlertActionStyle.default, handler:nil)
+        myalert.addAction(okAction)
+        self.present(myalert, animated:true, completion:nil)
     }
     
     var myString_usuario = String()
