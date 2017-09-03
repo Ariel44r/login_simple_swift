@@ -59,6 +59,7 @@
                                 </constraints>
                                 <state key="normal" title="Ingresar"/>
                                 <connections>
+                                    <action selector="button_ingresar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xnt-OE-FLD"/>
                                     <segue destination="ZMv-Ff-gVW" kind="show" identifier="segue_1" id="3Cu-1C-QEl"/>
                                 </connections>
                             </button>
@@ -80,7 +81,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -99,6 +100,13 @@
                             <constraint firstItem="iYa-Ct-mmn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zzT-3E-ZJJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label_contraseña" destination="ECu-s5-f2a" id="CK2-7W-qPH"/>
+                        <outlet property="label_login" destination="GZX-tx-EMs" id="0kq-vP-OvV"/>
+                        <outlet property="label_usuario" destination="8p9-bS-AZx" id="L99-ey-4IR"/>
+                        <outlet property="textfield_contraseña" destination="w7G-Bm-lrx" id="i7d-so-Vte"/>
+                        <outlet property="textfield_usuario" destination="iYa-Ct-mmn" id="XfM-48-Ow3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -174,6 +182,7 @@
                                 </constraints>
                                 <state key="normal" title="Confirmar"/>
                                 <connections>
+                                    <action selector="button_confirmar_vc2:" destination="ZMv-Ff-gVW" eventType="touchUpInside" id="bMp-e6-f00"/>
                                     <segue destination="WMr-sG-OuA" kind="show" identifier="segue_2" id="K0b-Tk-VI0"/>
                                 </connections>
                             </button>
@@ -242,6 +251,17 @@
                             <constraint firstItem="QYc-UO-qnl" firstAttribute="centerY" secondItem="VJF-4L-GX2" secondAttribute="centerY" constant="122.5" id="zO1-Zy-PPn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label_apellido_vc2" destination="j4L-uh-fjn" id="3a9-Ba-oBR"/>
+                        <outlet property="label_confirmadatos" destination="2xt-w5-wej" id="OQZ-cl-ZMq"/>
+                        <outlet property="label_edad_vc2" destination="Zo6-M1-YXh" id="ify-tB-zqg"/>
+                        <outlet property="label_genero_vc2" destination="7s8-k8-mG2" id="LMs-Z1-Nhg"/>
+                        <outlet property="label_nombre_vc2" destination="0uq-AI-Xxq" id="vSe-lW-B0w"/>
+                        <outlet property="textfield_apellido_vc2" destination="PKe-4W-tjj" id="EYP-HT-xke"/>
+                        <outlet property="textfield_edad_vc2" destination="UAe-DO-Gah" id="BPt-JS-28I"/>
+                        <outlet property="textfield_genero_vc2" destination="QYc-UO-qnl" id="Eid-K5-buj"/>
+                        <outlet property="textfield_nombre_vc2" destination="4dh-eW-jUB" id="Gca-F1-qby"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E9d-nU-zfy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
