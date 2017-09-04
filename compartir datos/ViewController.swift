@@ -52,7 +52,7 @@ class ViewController: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var send_usuario = segue.destination as! second_viewcontroller
+        let send_usuario = segue.destination as! second_viewcontroller
         send_usuario.myString_usuario = textfield_usuario.text!
     }
     
